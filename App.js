@@ -2,7 +2,7 @@
 import React, { useState, useEffect, createContext, useContext } from 'react';
 import { ShoppingCart, Heart, Search, Menu, X, Star, TrendingUp, Filter, Grid, List, User, CreditCard } from 'lucide-react';
 
-// Mock StockX API data with realistic streetwear products
+// Mock stockXXX API data with realistic streetwear products
 const DEMO_PRODUCTS = [
   {
     id: '1',
@@ -622,7 +622,7 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className="text-xs text-gray-500 uppercase tracking-wide">StockXXX Price</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-wide">stockXXX Price</div>
                   <div className="text-sm text-green-600 font-medium">Best Market Price</div>
                 </div>
               </div>
@@ -686,7 +686,7 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
 };
 
 // Main App Component
-const StockXXXApp = () => {
+const stockXXXApp = () => {
   const [products, setProducts] = useState(DEMO_PRODUCTS);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -731,7 +731,7 @@ const StockXXXApp = () => {
             {/* Logo */}
             <div className="flex items-center">
               <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                StockXXX
+                stockXXX
               </div>
               <div className="ml-2 text-xs bg-gradient-to-r from-green-500 to-blue-500 text-white px-2 py-1 rounded-full font-semibold">
                 BETTER PRICES
@@ -783,7 +783,7 @@ const StockXXXApp = () => {
       <section className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Better Than StockX
+            Better Than stockXXX
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90">
             Same products. Better prices. Superior experience.
@@ -906,7 +906,7 @@ const StockXXXApp = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
-                StockXXX
+                stockXXX
               </div>
               <p className="text-gray-400">
                 The better marketplace for authentic streetwear and collectibles.
@@ -940,7 +940,7 @@ const StockXXXApp = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 StockXXX. All rights reserved. Better than StockX.</p>
+            <p>&copy; 2024 stockXXX. All rights reserved. Better than stockXXX.</p>
           </div>
         </div>
       </footer>
@@ -952,7 +952,7 @@ const StockXXXApp = () => {
 export default function App() {
   return (
     <CartProvider>
-      <StockXXXApp />
+      <stockXXXApp />
     </CartProvider>
   );
 }
